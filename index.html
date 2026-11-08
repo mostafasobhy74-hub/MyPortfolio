@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="The portfolio of Mustapha Sobhy, a developer building thoughtful, accessible web experiences."
+  >
+  <meta name="theme-color" content="#ffffff">
+  <title>Mustapha Sobhy | Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="site-name" href="#home" aria-label="Mustapha Sobhy, home">Mustapha Sobhy</a>
+
+    <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+    ></button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" aria-labelledby="home-heading">
+      <h1 id="home-heading">Hi, I’m Mustapha Sobhy</h1>
+      <p>Developer creating accessible, useful experiences for the web.</p>
+      <a href="#projects">Explore my projects</a>
+    </section>
+
+    <section id="about-me" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        I’m a developer who enjoys turning ideas into clear, reliable web
+        experiences. I care about accessible design, thoughtful details, and
+        writing maintainable code.
+      </p>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <article data-category="web">
+        <h3>Project One</h3>
+        <figure>
+          <img
+            src="images/project-one.jpg"
+            alt="Screenshot of Project One showing its main dashboard"
+            width="800"
+            height="450"
+            loading="lazy"
+          >
+          <figcaption>A short description of the project and its purpose.</figcaption>
+        </figure>
+        <p>
+          Describe the problem this project solves, your approach, and the
+          technologies you used.
+        </p>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+          View Project One
+          <span class="visually-hidden">(opens in a new tab)</span>
+        </a>
+      </article>
+
+      <article data-category="mobile">
+        <h3>Project Two</h3>
+        <figure>
+          <img
+            src="images/project-two.jpg"
+            alt="Screenshot of Project Two showing its responsive website layout"
+            width="800"
+            height="450"
+            loading="lazy"
+          >
+          <figcaption>A short description of the project and its purpose.</figcaption>
+        </figure>
+        <p>
+          Share what you built, what you learned, and how the project helps its
+          intended users.
+        </p>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+          View Project Two
+          <span class="visually-hidden">(opens in a new tab)</span>
+        </a>
+      </article>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive design</li>
+        <li>Accessibility</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Have a project in mind? Send me a message.</p>
+
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="copyright-year">2026</span> Mustapha Sobhy</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
